@@ -1,0 +1,71 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+}
+
+.card-1 {
+  background-image: url("/img/card-1.jpg");
+}
+
+.card-2 {
+  background-image: url("/img/card-2.jpg");
+}
+
+.card-3 {
+  background-image: url("/img/card-3.jpg");
+}
+
+.card-4 {
+  background-image: url("/img/card-4.jpg");
+}
+
+.card-5 {
+  background-image: url("/img/card-5.jpg");
+}
+
+.container {
+  display: flex;
+  width: 90vw;
+}
+
+.panel {
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 80vh;
+  position: relative;
+  border-radius: 50px;
+  color: #fff;
+  cursor: pointer;
+  margin: 10px;
+  flex: 0.5;
+  transition: 1s ease-in-out;
+}
+
+.panel.active {
+  flex: 5;
+}
+
+.panel h3 {
+  font-size: 24px;
+  position: absolute;
+  bottom: 20px;
+  left: 20px;
+  margin: 0;
+  opacity: 0;
+  transition: 0.5;
+}
+
+.panel.active h3 {
+  opacity: 1;
+  transition: opacity 0.3s ease-in 0.4s;
+}
